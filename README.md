@@ -6,7 +6,7 @@ This is a simple skills test of dot.net, angular and SQL.  Please do not spend m
 
 1. Create a test database using a Database Server of your choice
 
-2. There is a mySQL Script which creates the tables and example data. This can be simply modified if necessary for the database of your choice
+2. There is a [mySQL Script](data) that creates the tables and example data for this test. This can be simply modified for the database of your choice
 
 3. Draw an Data Entity Diagram for the following tables
    - Clients
