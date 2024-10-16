@@ -1,6 +1,6 @@
 # Quidvis Interview Skills Test
 
-This is a simple skills test of dot.net, angular and SQL.  Please do not spend more than 2 hours on this test.
+This is a simple skills test of dot.net, angular and SQL.  We believe this test should take no more than 2-3 hours.  Please do not spend more than 3 hours on the test.
 
 ## SQL Database
 
@@ -61,9 +61,9 @@ Ideally using dapper rather the Entity Framewrite write an api to
 Please make the demostration look as professional as possible with a menu for the three options.
 
 
-## Do not take more that 2 hours
+## Please do not spend more than 3 hours on this test.
 
-Please do not take more than 2 hours to complete the test.
+There is no need to complete all the tasks in the test so please only spend more time if you want to.
 
 
 
