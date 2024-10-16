@@ -61,7 +61,7 @@ Ideally using dapper rather the Entity Framewrite write an api to
 Please make the demostration look as professional as possible with a menu for the three options.
 
 
-## Take more that 2 hours
+## Do not take more that 2 hours
 
 Please do not take more than 2 hours to complete the test.
 
