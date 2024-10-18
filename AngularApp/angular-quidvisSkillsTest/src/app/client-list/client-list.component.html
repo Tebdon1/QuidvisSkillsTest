@@ -1,0 +1,27 @@
+<h1>
+    Clients
+</h1>
+<table class="table">
+    <tr>
+        <td>
+            Id
+        </td>
+        <td>
+            Name
+        </td>
+        <td>
+            Properties
+        </td>
+    </tr>
+    <tr *ngFor="let client of clients">
+        <td>
+            {{ client.clientId }}
+        </td>
+        <td>
+            {{ client.name }}
+        </td>
+        <td>
+            <button (click)="showProperties(client.clientId)">Properties</button>
+        </td>
+    </tr>
+</table>

@@ -1,0 +1,43 @@
+<h1>
+    Properties
+</h1>
+<label for="clients">Filter by client: </label>
+<select [(ngModel)]="clientId" (change)="applyFilter()">
+    <option value="">
+        All Clients 
+    </option>
+    <option *ngFor="let client of clients" 
+               [value]="client.clientId">
+               {{client.name}}
+    </option>
+  </select>
+<table class="table">
+    <tr>
+        <td>
+            Property Id
+        </td>
+        <td>
+            Client Id
+        </td>
+        <td>
+            Name
+        </td>
+        <td>
+            Code
+        </td>
+    </tr>
+    <tr *ngFor="let property of filteredProperties">
+        <td>
+            {{ property.propertyId }}
+        </td>
+        <td>
+            {{ property.clientId }}
+        </td>
+        <td>
+            {{ property.name }}
+        </td>
+        <td>
+            {{ property.code }}
+        </td>
+    </tr>
+</table>

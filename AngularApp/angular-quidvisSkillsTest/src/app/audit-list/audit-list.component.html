@@ -1,0 +1,61 @@
+<h1>
+    Audits
+</h1>
+<label for="properties">Filter by property: </label>
+<select [(ngModel)]="propertyId" (change)="applyFilter()">
+    <option value="">
+        All Properties 
+    </option>
+    <option *ngFor="let property of properties" 
+               [value]="property.propertyId">
+               {{property.name}}
+    </option>
+  </select>
+<table class="table">
+    <tr >
+        <td>
+            Audit Id
+        </td>
+        <td>
+            Audit Date
+        </td>
+        <td>
+            Audit Company Id
+        </td>
+        <td>
+            Property Id
+        </td>
+        <td>
+            Status
+        </td>
+        <td>
+            Assessment Type Id
+        </td>
+        <td>
+            Completed Date
+        </td>
+    </tr>
+    <tr *ngFor="let audit of filteredAudits">
+        <td>
+            {{ audit.auditId }}
+        </td>
+        <td>
+            {{ audit.auditDate | date: 'dd/MMM/yyyy'}}
+        </td>
+        <td>
+            {{ audit.auditCompanyId }}
+        </td>
+        <td>
+            {{ audit.propertyId }}
+        </td>        
+        <td>
+            {{ audit.status }}
+        </td>
+        <td>
+            {{ audit.assessmentTypeId }}
+        </td>
+        <td>
+            {{ audit.completedDate | date: 'dd/MMM/yyyy'}}
+        </td>
+    </tr>
+</table>
