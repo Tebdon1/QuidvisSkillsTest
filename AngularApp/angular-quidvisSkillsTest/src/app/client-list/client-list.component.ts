@@ -21,7 +21,7 @@ export class ClientListComponent implements OnInit {
 
   ngOnInit() {
     this.http.get<any>("https://localhost:7047/Test/GetClients").subscribe(
-      result => this.clients = result
+      result => this.clients = result, error => window.alert("error")
     );
   }
   showProperties(clientId: string){
