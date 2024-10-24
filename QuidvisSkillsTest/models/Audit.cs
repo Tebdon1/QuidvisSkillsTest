@@ -3,6 +3,7 @@ public class Audit {
     public DateTime auditDate {get; set;}
     public string auditCompanyId {get; set;}
     public string propertyId {get; set;}
+    public string propertyName {get; set;}
     public string status {get; set;}
     public string assessmentTypeId {get; set;}
     public DateTime completedDate {get; set;}
